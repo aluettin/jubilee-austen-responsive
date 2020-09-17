@@ -1,0 +1,964 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   html {
+    font-size: 16px;
+   }
+
+   body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    text-align: left;
+   }
+
+   ul,
+   ol {
+     list-style-type: none;
+   }
+
+   a {
+     color: #222;
+     text-decoration: none;
+   }
+
+   a:hover {
+     color: #9b9b9b;
+   }
+
+   a:visited {
+     color: #9b9b9b;
+   }
+
+   h1 {
+     font-family: 'Lora', serif;
+   }
+
+   h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.875em;
+    margin: 0;
+   }
+
+   h3,
+   h4 {
+    margin: 20px 0;
+    font-family: 'Lora', serif;
+    font-size: 1.125em;
+   }
+
+   h5,
+   h6 {
+     font-family: 'Source Sans Pro', sans-serif;
+   }
+
+   p {
+     font-size: .9em;
+     line-height: 1.285;
+   }
+
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin: 0;
+   }
+
+   address {
+     font-style: normal;
+   }
+
+   .content-wrapper {
+     margin: 50px 0;
+     width: 90%;
+   }
+
+   /**************************** Mobile styles ****************************/
+
+   /***** Base header - footer styles *****/
+
+   header,
+   footer {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   header {
+     background: url('../img/hero2.jpg') #333;
+     background-position: center;
+     background-size: cover;
+     min-height: 500px;
+   }
+
+   header .content-wrapper {
+     display: flex;
+     align-items: center;
+     flex-flow: column nowrap;
+   }
+
+   header h1 a {
+     color: #96a37a !important;
+   }
+
+   header nav {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-flow: row wrap;
+     text-transform: uppercase;
+   }
+
+   header nav ul {
+     display: flex;
+     align-items: center;
+     flex-flow: column nowrap;
+     padding: 0;
+   }
+
+   header nav ul li {
+     padding: 10px;
+   }
+
+   nav ul li a {
+     color: #828282;
+     text-decoration: none;
+   }
+
+   header h2 {
+     color: #9b9b9b;
+     width: 90%;
+   }
+
+   h2 span {
+     color: #2b2b2b;
+   }
+
+   #about {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-flow: row wrap;
+   }
+
+   #about .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   #about figure {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #ebebeb;
+     margin-top: 25px;
+     padding: 12px;
+     width: 50%;
+   }
+
+   #about p {
+     color: #222;
+     font-size: 1.125em;
+     font-weight: 300;
+     line-height: 1.5;
+   }
+
+   #skills {
+     display: flex;
+     justify-content: center;
+     background: #f0c8bf;
+   }
+
+   #skills .content-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column wrap;
+   }
+
+   #skills i {
+     color: #efebe8;
+   }
+
+   #skills h3 {
+     text-align: center;
+     font-size: 1.3em;
+   }
+
+   .skills-item-description {
+     font-size: 1.125em;
+     font-weight: 300;
+     line-height: 1.5;
+     text-align: center;
+   }
+
+   #wordpress {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-flow: row wrap;
+   }
+
+   #wordpress .content-wrapper {
+     display: flex;
+     flex-flow: column nowrap;
+     margin-bottom: 0;
+   }
+
+   #wordpress .fontawesome-icon {
+     display: flex;
+     justify-content: center;
+     color: #c49074;
+   }
+
+   #wordpress p {
+     color: #222;
+     font-size: 1.125em;
+     font-weight: 300;
+     line-height: 1.5;
+
+   }
+
+   #wordpress span {
+     font-weight: 400;
+   }
+
+   #portfolio {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-flow: row wrap;
+   }
+
+   #portfolio .content-wrapper {
+     display: flex;
+     align-items: center;
+     flex-flow: column wrap;
+     margin-bottom: 0;
+   }
+
+   #portfolio .site-example {
+     display: flex;
+     align-items: center;
+     flex-flow: column wrap;
+   }
+
+   #portfolio h2 {
+    font-family: 'Lora', serif;
+    font-size: 1.875em;
+    margin-bottom: 30px;
+   }
+
+   #portfolio h3 {
+    color: #7f7f7f;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.3em;
+    font-weight: lighter;
+   }
+
+   #portfolio p {
+    color: #222;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+   #portfolio figure {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #ebebeb;
+     padding: 12px;
+   }
+
+   #portfolio-two {
+     display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-flow: row wrap;
+   }
+
+   #portfolio-two .content-wrapper {
+     display: flex;
+     align-items: center;
+     flex-flow: column wrap;
+   }
+
+   #portfolio-two p {
+    color: #222;
+    font-size: 1.125em;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+    #portfolio-two figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #000;
+    }
+
+    #static-examples {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
+
+    #static-examples .content-wrapper {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      margin: 0;
+    }
+
+    #static-examples .site-example {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+    }
+
+    #static-examples h2 {
+     font-family: 'Lora', serif;
+     font-size: 1.875em;
+    }
+
+    #static-examples h3 {
+     color: #7f7f7f;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.3em;
+     font-weight: lighter;
+    }
+
+    #static-examples p {
+     color: #222;
+     font-size: 1.125em;
+     font-weight: 300;
+     line-height: 1.5;
+ }
+
+    #static-examples figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ebebeb;
+      padding: 12px;
+    }
+
+   footer {
+     display: flex;
+     justify-content: center;
+     flex-flow: column wrap;
+     background: #ebebeb;
+   }
+
+   footer figure {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 12px solid #ffffff;
+     margin-bottom: 50px;
+   }
+
+   footer .contact-info ul {
+     justify-content: space-between;
+     width: 60%;
+   }
+
+   .contact-info a {
+     color: #c49074;
+   }
+
+   .contact-info ul {
+     display: flex;
+     justify-content: space-around;
+     flex-flow: row nowrap;
+     padding: 0;
+   }
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 768px) {
+
+   /**************************** Tablet styles ****************************/
+
+   /***** Base tablet styles *****/
+
+   .content-wrapper {
+     max-width: 640px;
+   }
+
+   /***** Header tablet styles *****/
+
+   header .content-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-flow: row wrap;
+   }
+
+   header h1 {
+     font-size: 1.6em;
+     margin: 0;
+     padding-top: 28px;
+     width: 40%;
+   }
+
+   header nav {
+     padding-right: 20px;
+     width: 40%;
+   }
+
+   header nav ul {
+     display: flex;
+     flex-flow: row nowrap;
+     padding: 0;
+   }
+
+   header nav ul li {
+     padding: 20px 20px 0 20px;
+   }
+
+   nav ul li a {
+     font-size: 1.1em;
+   }
+
+   header h2 {
+     font-size: 2.6em;
+     line-height: 1.2;
+     margin-top: 40px;
+     width: 70%;
+   }
+
+   /***** Homepage tablet styles *****/
+
+   #about .content-wrapper {
+     justify-content: flex-start;
+   }
+
+   #about h2 {
+     width: 85%;
+   }
+
+   #about article {
+     display: flex;
+     flex-flow: row wrap;
+   }
+
+   #about article .bio {
+     width: 100%;
+   }
+
+   /** placeholder in case bio pic is added later...add justify-content space between, and change flex-flow to
+   row nowrap, in about article above, and change width of bio to 60% in about article bio above...
+
+   #about article figure {
+     width: 25%;
+   } **/
+
+   #about p {
+     color: #222;
+     font-size: 1.3em;
+     font-weight: 300;
+     line-height: 1.8;
+   }
+
+   #skills h3 {
+     font-size: 1.7em;
+   }
+
+   .skills-item-description {
+     font-size: 1.4em;
+     font-weight: 300;
+     line-height: 1.6;
+     text-align: center;
+   }
+
+   #wordpress figure {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+     width: 60%;
+   }
+
+   #wordpress p {
+     color: #222;
+     font-size: 1.3em;
+     font-weight: 300;
+     line-height: 1.8;
+     text-align: left;
+   }
+
+   .contact-info h3 {
+     font-size: 1.4em;
+   }
+
+   .contact-info a {
+     font-size: 1.2em;
+   }
+
+   #portfolio p {
+     color: #222;
+     font-size: 1.3em;
+     font-weight: 300;
+     line-height: 1.8;
+     text-align: left;
+   }
+
+   #portfolio figure {
+     width: 100%;
+   }
+
+   #portfolio h6 {
+     font-size: 1.2em;
+   }
+
+   #static-examples p {
+     color: #222;
+     font-size: 1.3em;
+     font-weight: 300;
+     line-height: 1.8;
+     text-align: left;
+   }
+
+   #static-examples figure {
+     width: 100%;
+   }
+
+   #static-examples h6 {
+     font-size: 1.2em;
+   }
+
+   footer .contact-info ul {
+     justify-content: space-between;
+     width: 40%;
+   }
+
+   @media only screen and (min-width: 1200px) {
+
+   /**************************** Desktop styles ****************************/
+
+
+   /***** Base desktop styles *****/
+
+   .content-wrapper {
+     margin: 100px 0;
+     max-width: 960px;
+   }
+
+   /***** Header desktop styles *****/
+
+   header {
+     background-position: center bottom;
+   }
+
+   header .content-wrapper {
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-flow: row wrap;
+     height: 600px;
+     margin-top: 50px;
+   }
+
+   header h1 {
+     justify-content: flex-start;
+     font-size: 1.875em;
+   }
+
+   header nav ul li a {
+     font-size: 1.25em;
+   }
+
+   header h2 {
+     align-self: flex-start;
+     font-size: 3.875em;
+     height: 400px;
+     width: 90%;
+   }
+
+   /***** Homepage desktop styles *****/
+
+   #about .content-wrapper {
+     justify-content: space-between;
+   }
+
+   #about h2 {
+     font-size: 2.25em;
+   }
+
+   #about article {
+     display: flex;
+     flex-flow: row wrap;
+   }
+
+   #about article .bio {
+    width: 100%;
+   }
+
+   /** placeholder in case bio pic is added later...add justify-content space between, and change flex-flow to
+   row nowrap, in about article above, and change width of bio to 70% in about article bio above...
+
+   #about article figure {
+     margin-bottom: 50px;
+     width: 20%;
+   } **/
+
+   #about p {
+     color: #7f7f7f;
+     font-size: 1.3125em;
+     font-weight: 300;
+     line-height: 1.8;
+   }
+
+   #skills .content-wrapper {
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-flow: row nowrap;
+   }
+
+   #skills .skills-item {
+     margin: 0;
+   }
+
+   #skills article {
+     width: 280px;
+   }
+
+   #skills h3 {
+     font-size: 1.5em;
+   }
+
+   #skills article p {
+     font-size: 1.125em;
+     font-weight: 400;
+     line-height: 1.75em;
+     margin: 0;
+   }
+
+   #wordpress figure {
+     display: flex;
+     justify-content: center;
+     width: 40%;
+   }
+
+   #wordpress p {
+     color: #7f7f7f;
+     align-self: center;
+     font-size: 1.3125em;
+     font-weight: 300;
+     text-align: left;
+   }
+
+   #wordpress span {
+     font-weight: 400;
+   }
+
+   #portfolio .work-examples {
+     display: flex;
+     align-items: center;
+     flex-flow: row nowrap;
+   }
+
+   #portfolio .site-example {
+     margin: 40px;
+   }
+
+   #portfolio h2 {
+     font-size: 2.25em;
+   }
+
+   #static-examples .work-examples {
+     display: flex;
+     align-items: center;
+     flex-flow: row nowrap;
+   }
+
+   #static-examples .site-example {
+     margin: 40px;
+   }
+
+   #static-examples h2 {
+     font-size: 2.25em;
+   }
+
+   footer .content-wrapper {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-flow: row nowrap;
+   }
+
+   footer .contact-info,
+   footer figure {
+     width: 40%;
+   }
+
+   footer .contact-info ul {
+     justify-content: space-between;
+     width: 50%;
+   }
+
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
