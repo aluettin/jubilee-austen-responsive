@@ -363,7 +363,7 @@ textarea {
      justify-content: center;
      align-items: center;
      border: 1px solid #ebebeb;
-     padding: 12px;
+
    }
 
    #portfolio-two {
@@ -391,6 +391,7 @@ textarea {
       justify-content: center;
       align-items: center;
       border: 1px solid #000;
+
     }
 
     #static-examples {
@@ -437,7 +438,54 @@ textarea {
       justify-content: center;
       align-items: center;
       border: 1px solid #ebebeb;
-      padding: 12px;
+
+    }
+
+    #wordpress-examples {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-flow: row wrap;
+    }
+
+    #wordpress-examples .content-wrapper {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+      margin: 0;
+    }
+
+    #wordpress-examples .site-example {
+      display: flex;
+      align-items: center;
+      flex-flow: column wrap;
+    }
+
+    #wordpress-examples h2 {
+     font-family: 'Lora', serif;
+     font-size: 1.875em;
+    }
+
+    #wordpress-examples h3 {
+     color: #7f7f7f;
+     font-family: 'Source Sans Pro', sans-serif;
+     font-size: 1.3em;
+     font-weight: lighter;
+    }
+
+    #wordpress-examples p {
+     color: #222;
+     font-size: 1.125em;
+     font-weight: 300;
+     line-height: 1.5;
+ }
+
+    #wordpress-examples figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ebebeb;
+      
     }
 
    footer {
@@ -711,6 +759,22 @@ textarea {
      font-size: 1.2em;
    }
 
+   #wordpress-examples p {
+     color: #222;
+     font-size: 1.3em;
+     font-weight: 300;
+     line-height: 1.8;
+     text-align: left;
+   }
+
+   #wordpress-examples figure {
+     width: 100%;
+   }
+
+   #wordpress-examples h6 {
+     font-size: 1.2em;
+   }
+
    footer .contact-info ul {
      justify-content: space-between;
      width: 40%;
@@ -860,6 +924,20 @@ textarea {
    }
 
    #static-examples h2 {
+     font-size: 2.25em;
+   }
+
+   #wordpress-examples .work-examples {
+     display: flex;
+     align-items: center;
+     flex-flow: row nowrap;
+   }
+
+  #wordpress-examples .site-example {
+     margin: 40px;
+   }
+
+   #wordpress-examples h2 {
      font-size: 2.25em;
    }
 
