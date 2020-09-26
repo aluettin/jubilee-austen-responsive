@@ -485,7 +485,7 @@ textarea {
       justify-content: center;
       align-items: center;
       border: 1px solid #ebebeb;
-      
+
     }
 
    footer {
@@ -510,14 +510,16 @@ textarea {
 
    .contact-info a {
      color: #c49074;
+     padding: 20px;
    }
 
    .contact-info ul {
      display: flex;
-     justify-content: space-around;
+     justify-content: space-between;
      flex-flow: row nowrap;
      padding: 0;
    }
+
 
 
 /* ==========================================================================
